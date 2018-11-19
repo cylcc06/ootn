@@ -1,8 +1,6 @@
 from __future__ import unicode_literals  # at top of module
 from __future__ import division, print_function, with_statement
 
-
-
 class TreeNode(object):
     """The basic node of tree structure"""
 
@@ -15,10 +13,8 @@ class TreeNode(object):
     def __repr__(self) :
         return 'TreeNode(%s)' % self.name
 
-
     def __contains__(self, item):
         return item in self.child
-
 
     def __len__(self):
         """return number of children node"""
@@ -86,7 +82,7 @@ class TreeNode(object):
 if __name__ == '__main__':
     # local test
     print('test add_child()')
-    root = TreeNode('') # root name is ''
+    root = TreeNode('root') # root name is ''
     a1 = root.add_child('a1')
     a1.add_child('b1')
     a1.add_child('b2')
