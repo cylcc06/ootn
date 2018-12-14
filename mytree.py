@@ -84,6 +84,8 @@ class TreeNode(object):
 
 
 if __name__ == '__main__':
+
+    print("##")
     # local test
     print('test add_child()')
     root = TreeNode('') # root name is ''
