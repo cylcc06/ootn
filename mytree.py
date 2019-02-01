@@ -75,6 +75,15 @@ class TreeNode(object):
     def items(self):
         return self.child.items()
 
+    def dfs(root,strs):
+        """Depth-First-Search, return None if not found"""
+        for name,obj in root.items():
+            if name==strs:
+                print(obj)
+                return obj
+            else:
+                return dfs(obj,strs)
+        
     def dump(self, indent=0):
         """dump tree to string"""
         tab = '    '*(indent-1) + ' |- ' if indent > 0 else ''
